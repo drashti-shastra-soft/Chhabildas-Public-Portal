@@ -1,0 +1,317 @@
+@media (min-width: 320px) and (max-width: 575px) {
+    .ManiHeader .navbar {
+        padding: 10px 0px 10px 0;
+    }
+
+    .NavLogo img {
+        max-height: 50px !important;
+    }
+
+    .HomeSlider .swiper-slide .captionBox {
+        display: none;
+    }
+
+    .HomeSlider .swiper-slide img {
+        min-height: 400px !important;
+    }
+
+    .productDescription h3,
+    .NumberBlock h4 {
+        font-size: 24px;
+    }
+
+    .NumberBlock {
+        bottom: 25px;
+    }
+
+    .breadcrumbSection {
+        padding: 200px 0 150px 0;
+    }
+
+    .aboutDescription h2 {
+        font-size: 30px;
+    }
+
+    footer .border-shape::after, footer .border-shape::before {
+        width: 70%;
+    }
+
+    .footer-card section {
+        display: grid;
+        gap: 10px;
+    }
+
+    .BackToTop a {
+        height: 35px !important;
+        width: 35px !important;
+        font-size: 18px !important;
+    }
+
+    .MyQuote {
+        font-size: 26px;
+    }
+
+    .playButton a {
+        width: 50px;
+        height: 50px;
+        margin: 25px auto 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .productDescription h3, .NumberBlock h4 {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    .goog-te-gadget .goog-te-combo {
+        padding: 5px 5px;
+        font-size: 10px;
+        font-weight: 900;
+    }
+
+    .ManiHeader .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .emiEffect span {
+        top: 8px !important;
+        left: 80px !important;
+    }
+
+    .IconBlock i {
+        font-size: 20px;
+    }
+
+    .breadHeading h4 {
+        font-size: 32px;
+    }
+
+    #SubFooter p {
+        font-size: 18px;
+    }
+
+    .BackToTop a {
+        height: 45px;
+        width: 45px;
+    }
+
+    .section-gap1 {
+        padding: 0px 0 50px 0;
+    }
+
+    .productImage img {
+        max-height: max-content;
+        min-height: auto;
+    }
+
+    .productBox {
+        margin-bottom: 100px;
+    }
+
+        .productBox:last-child {
+            margin-bottom: 50px;
+        }
+
+    .HomeSlider .swiper-slide img {
+        min-height: 650px;
+    }
+
+    .HomeSlider .swiper-slide .captionBox h3 {
+        font-size: 36px;
+    }
+
+    .icon-bar {
+        right: 0;
+    }
+
+        .icon-bar a {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+    .headingSection h1 {
+        font-size: 16px;
+    }
+
+    .headingSection h2 {
+        font-size: 32px !important;
+    }
+
+    .ProdictLine {
+        grid-column-gap: 20px;
+        min-height: 85px;
+    }
+
+    .ProductBlock {
+        font-size: 20px !important;
+    }
+
+    .ProdictLine:hover {
+        padding-left: 25px;
+    }
+
+    .PaymentStipe img {
+        max-height: 28px !important;
+    }
+
+    .logo-container img {
+        padding: 0 10px;
+    }
+
+    .ourUSP {
+        min-height: auto;
+    }
+
+    .c-ip-running-line__title {
+        font-size: 16px;
+    }
+    .SpecialRequest p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+    .process .ImageItem img {
+        display: none;
+    }
+
+    .loader3 img {
+        height: 130px;
+    }
+
+    .ManiHeader .navbar-toggler {
+        height: 45px;
+        width: 45px;
+        background: #8ec840;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .productImage img {
+        filter: none;
+    }
+
+    .section-gap:hover .headingSection h1 {
+        letter-spacing: 3px;
+    }
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .emiEffect span {
+        top: 12px;
+        left: 84px;
+    }
+
+    .HomeSlider .swiper-slide {
+        display: block;
+    }
+
+        .HomeSlider .swiper-slide img {
+            width: 100%;
+        }
+
+        .HomeSlider .swiper-slide .captionBox {
+            width: 100%;
+        }
+
+    .headingSection h2 {
+        font-size: 36px;
+    }
+
+    .bestproductImg {
+        display: none;
+    }
+
+    .ProductBlock {
+        font-size: 24px;
+    }
+
+    #BestProduct .col-12 {
+        margin-top: 0 !important;
+    }
+
+    .BGBehind {
+        display: none;
+    }
+
+    .footer-card {
+        flex-wrap: wrap;
+    }
+
+        .footer-card section span {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .footer-card section {
+            margin-bottom: 20px;
+        }
+
+    .about1 {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .aboutmyImg {
+        margin-bottom: 50px;
+    }
+
+    .aboutmyImg,
+    .aboutDescription {
+        width: 100%;
+    }
+
+    .process .ImageItem.odd {
+        margin-top: 0;
+    }
+
+    .process .ImageItem {
+        margin-bottom: 50px;
+    }
+
+    .process .col-md-6:last-child .ImageItem {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    .process .ImageItem .cont {
+        min-height: 250px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ManiHeader {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .WrapperContainer {
+        max-width: 1250px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+}
+
+@media (max-width: 1399px) {
+}

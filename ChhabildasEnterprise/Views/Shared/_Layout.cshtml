@@ -1,0 +1,382 @@
+﻿@{
+    var canonicalUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="@ViewBag.MetaKeywords" />
+    <meta name="description" content="@ViewBag.MetaDescription" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="@Html.Raw(canonicalUrl)" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/sitefonts.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/chhabildasenterprise.ico">
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "LocalBusiness",
+          "name": "Chhabildas Enterprise",
+          "url": "https://chhabildasenterprise.com",
+          "logo": "https://chhabildasenterprise.com/images/chhabildasenterprisefull.png",
+          "image": "https://chhabildasenterprise.com/images/aboutcover.jpg",
+          "description": "Chhabildas Enterprise offers premium quality Home Linen, Hospital Linen, and Hotel Linen for homes, hotels, and healthcare facilities. Trusted supplier in Surat, Gujarat.",
+          "address": {
+            "@@type": "PostalAddress",
+            "streetAddress": "Shop No. 1, Soham Arcade, Near Baghban Circle, Green City Rd, Pal Gaurav Path",
+            "addressLocality": "Surat",
+            "addressRegion": "Gujarat",
+            "postalCode": "394510",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@@type": "GeoCoordinates",
+            "latitude": 21.170240,
+            "longitude": 72.831062
+          },
+          "telephone": "+91 99096 64479",
+          "email": "chhabildas.enterprise@gmail.com",
+          "priceRange": "$$",
+          "openingHours": "Mo-Sa 10:00-20:00",
+          "contactPoint": {
+            "@@type": "ContactPoint",
+            "telephone": "+91 99096 64479",
+            "contactType": "Customer Service",
+            "areaServed": "IN",
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/people/Chhabildas-Enterprise/100063607519959/",
+            "https://www.instagram.com/chhabildas_enterprise/"
+          ],
+          "hasMap": "https://maps.app.goo.gl/C6rcLcXgHCoMubew9",
+          "keywords": ["Home Linen", "Hospital Linen", "Hotel Linen", "Linen Supplier", "Surat Linen Supplier"],
+          "productCategory": [
+            "Home Linen",
+            "Hospital Linen",
+            "Hotel Linen"
+          ]
+        }
+    </script>
+
+</head>
+<body>
+    <div class="hidden" id="topcasual"></div>
+    <header class="ManiHeader">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand NavLogo logoSetScreen" href="@Url.Action("index","Home")">
+                    <img src="~/images/chhabildasenterprisefull.png" class="img-fluid" alt="Chhabildas Enterprise Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("index", "Home")">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("about", "Home")">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="javascript:void(0);">Products <i class="fas fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="SubMenyBox">
+                                <li><a class="nav-link" href="@Url.Action("homelinen", "Home")">Home Linen</a></li>
+                                <li><a class="nav-link" href="@Url.Action("hotellinen", "Home")">Hotel Linen</a></li>
+                                <li><a class="nav-link" href="@Url.Action("hospitallinen", "Home")">Hospital Linen</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item emiEffect">
+                            <span>EMI Available</span>
+                            <a class="nav-link" href="#BestProduct">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ContactUs">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="translateBar">
+                                <div id="google_translate_element"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="ContactSection section-gap" id="ContactUs">
+        <div class="WrapperContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" id="setFoots">
+                        <div class="headingSection dark">
+                            <h1>Reach Out to Us</h1>
+                            <h2><i class="fas fa-arrow-up"></i>Say Hello!</h2>
+                        </div>
+                        @* <a href="tel:+919909664479" class="cta-button w-inline-block">
+                        <img src="~/images/icons/call.png" loading="lazy" alt="CTA Button" class="image-2">
+                        </a> *@
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="PaymentStipe">
+                            <img src="~/images/icons/paymentstrip.png" class="img-fluid" style="max-height:32px;" />
+                        </div>
+                    </div>
+                    <span class="border-shape"></span>
+                    <div class="col-md-12" style="margin-top: 50px;">
+                        <div class="footer-card">
+                            <section>
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <span><a href="https://maps.app.goo.gl/UUpqYwFhDJ4svArc7" target="_blank">Shop No. 1, Soham Arcade, Near Baghban Circle, Green City Rd, Pal Gaurav Path, Surat, Gujarat 394510</a></span>
+                            </section>
+                            <section>
+                                <span><i class="fas fa-mobile-alt"></i></span>
+                                <span><a href="tel:+919909664479">+91 99096 64479</a></span>
+                            </section>
+                            <section>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <span><a href="mailto:chhabildas.enterprise@gmail.com">chhabildas.enterprise@gmail.com</a></span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="SubFooter">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="Pull-Left">
+                            <p>Chhabildas Enterprise © <span id="footerDate"></span> - All Rights Reserved.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="pull-Right">
+                            <p>Designed & Developed by <a href="https://www.mitsolutions.in/" target="_blank">M iT Solutions</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="BackToTop">
+        <a href="#topcasual"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i> </a>
+    </div>
+
+    <div class="icon-bar">
+        <a class="telephone" href="tel:+919909664479"><i class="fas fa-phone-alt"></i></a>
+        <a class="whatsapp" href="https://wa.me/+919909664479" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a class="facebook" href="https://www.facebook.com/profile.php?id=100063607519959" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="ig" href="https://www.instagram.com/chhabildas_enterprise/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="gsearch" href="https://search.google.com/local/writereview?placeid=ChIJ29yDjNJN4DsRZXFeNtGzeLg" target="_blank"><i class="fab fa-google"></i></a>
+    </div>
+
+    <div class="MyLoader" id="lodeerloder">
+        <div class="loader3">
+            <img src="~/images/chhabildasenterprise.png" class="img-fluid" alt="Chhabildas Enterprise" width="53" height="70" />
+        </div>
+    </div>
+
+    <script src="~/js/jquery-3.5.1.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/translate.js"></script>
+    <script src="~/js/popper.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //Loader
+            $(window).on('load', function () {
+                $('#lodeerloder').addClass('hidden'); // Add the 'hidden' class to trigger fadeout animation
+            });
+            setTimeout(function () {
+                $('#lodeerloder').addClass('hidden');
+            }, 3000);
+
+            //Add fixed Class in Header
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.ManiHeader').addClass('fixed');
+                } else {
+                    $('.ManiHeader').removeClass('fixed');
+                }
+            });
+        });
+    </script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: "en",
+                includedLanguages: "en,gu,ar,es,th",
+                autoDisplay: false
+            }, "google_translate_element");
+            var $googleDiv = $("#google_translate_element .skiptranslate");
+            var $googleDivChild = $("#google_translate_element .skiptranslate div");
+            $googleDivChild.next().remove();
+            $googleDiv.contents().filter(function () {
+                return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
+            }).remove();
+        }
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper("#SliderSection .mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            grabCursor: true,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 50) {
+                $(".BackToTop").css("opacity", "1");
+                $(".BackToTop").css("transform", "translate(0, 0)");
+            } else {
+                $(".BackToTop").css("opacity", "0");
+                $(".BackToTop").css("transform", "translate(0, 50px)");
+            }
+        });
+    </script>
+
+    <script>
+        // Select all NumberBlock elements
+        const numberBlocks = document.querySelectorAll('.NumberBlock h4');
+        // Loop through each block and update its content
+        numberBlocks.forEach((block, index) => {
+            const newNumber = (index + 1).toString().padStart(2, '0'); // Increment and format as "01", "02", etc.
+            block.textContent = newNumber;
+        });
+
+        $('.logos').owlCarousel({
+            items: 4,
+            lazyLoad: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                960: {
+                    items: 5
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get the ContactSection element
+            const contactSection = document.querySelector('.ContactSection');
+
+            // Create an IntersectionObserver to observe the ContactSection element
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // When ContactSection appears on screen, activate the mousemove effect
+                        document.addEventListener('mousemove', handleMouseMove);
+                    } else {
+                        // Remove the mousemove listener when ContactSection is not visible
+                        document.removeEventListener('mousemove', handleMouseMove);
+                    }
+                });
+            });
+
+            // Start observing the ContactSection
+            observer.observe(contactSection);
+
+            // Mousemove handler
+            function handleMouseMove(event) {
+                const eyes = document.querySelectorAll('.image-2');
+                eyes.forEach((eye) => {
+                    const { left, top, width, height } = eye.getBoundingClientRect();
+                    const eyeCenterX = left + width / 4;
+                    const eyeCenterY = top + height / 4;
+                    const deltaX = event.clientX - eyeCenterX;
+                    const deltaY = event.clientY - eyeCenterY;
+                    const angle = Math.atan2(deltaY, deltaX);
+                    const distance = Math.min(width, height) / 10;
+                    const offsetX = Math.cos(angle) * distance;
+                    const offsetY = Math.sin(angle) * distance;
+                    eye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+                });
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("videoModal");
+            const openModal = document.getElementById("openModal");
+            const closeModal = document.querySelector(".close");
+            const videoPlayer = document.getElementById("videoPlayer");
+
+            openModal.addEventListener("click", function (e) {
+                e.preventDefault();
+                modal.style.display = "flex";
+                videoPlayer.src += "&autoplay=1"; // Auto-play when opened
+            });
+
+            function closeVideoModal() {
+                modal.style.display = "none";
+                videoPlayer.src = videoPlayer.src.replace("&autoplay=1", ""); // Stop video
+            }
+
+            closeModal.addEventListener("click", closeVideoModal);
+
+            // Close when clicking outside modal content
+            modal.addEventListener("click", function (e) {
+                if (e.target === modal) {
+                    closeVideoModal();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var fDate = new Date();
+        var fYear = fDate.getFullYear();
+        document.getElementById("footerDate").innerHTML = fYear;
+    </script>
+
+    @* @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>
